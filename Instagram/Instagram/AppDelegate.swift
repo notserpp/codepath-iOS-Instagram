@@ -30,10 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // if there is a logged in user then load the home view controller
             print("There is a current user")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "HomeNavigationController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "TabBarNavController")
             window?.rootViewController = vc
         }
         
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UserDidLogout"), object: nil, queue: OperationQueue.main) { (Notification) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
 
         return true
     }
