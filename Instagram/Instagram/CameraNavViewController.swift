@@ -1,18 +1,18 @@
 //
-//  TabBarViewController.swift
+//  CameraNavViewController.swift
 //  Instagram
 //
-//  Created by Leo Wong on 3/11/17.
+//  Created by Leo Wong on 3/12/17.
 //  Copyright © 2017 SpotTunes. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
-    
+class CameraNavViewController: UINavigationController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.selectedIndex = 1
+
         // Do any additional setup after loading the view.
     }
 
