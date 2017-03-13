@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28036E201E761E960071BB22 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28036E1F1E761E960071BB22 /* ProfileViewController.swift */; };
+		28036E221E7642EB0071BB22 /* CameraNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28036E211E7642EB0071BB22 /* CameraNavViewController.swift */; };
 		28B5899A1E752CD800E4D7A4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B589991E752CD800E4D7A4 /* CameraViewController.swift */; };
-		28B5899C1E7535A900E4D7A4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5899B1E7535A900E4D7A4 /* TabBarViewController.swift */; };
+		28B5899E1E75C42600E4D7A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5899D1E75C42600E4D7A4 /* Post.swift */; };
+		28B589A01E75CCDD00E4D7A4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5899F1E75CCDD00E4D7A4 /* Global.swift */; };
+		28B589A31E75F5FF00E4D7A4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B589A21E75F5FF00E4D7A4 /* PostTableViewCell.swift */; };
 		28BA9C341E6FC2A900612F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BA9C331E6FC2A900612F9E /* AppDelegate.swift */; };
 		28BA9C391E6FC2A900612F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BA9C371E6FC2A900612F9E /* Main.storyboard */; };
 		28BA9C3B1E6FC2A900612F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BA9C3A1E6FC2A900612F9E /* Assets.xcassets */; };
@@ -44,8 +48,12 @@
 		048179D93ED43BEC892470DC /* Pods_InstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A90CA8E4731C8F9F1E56B2F /* Pods_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A20A412EA153F53572AA9AE /* Pods-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramUITests/Pods-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		28036E1F1E761E960071BB22 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28036E211E7642EB0071BB22 /* CameraNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraNavViewController.swift; sourceTree = "<group>"; };
 		28B589991E752CD800E4D7A4 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		28B5899B1E7535A900E4D7A4 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		28B5899D1E75C42600E4D7A4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		28B5899F1E75CCDD00E4D7A4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		28B589A21E75F5FF00E4D7A4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		28BA9C301E6FC2A900612F9E /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28BA9C331E6FC2A900612F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28BA9C381E6FC2A900612F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B589A11E75F54A00E4D7A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28B589A21E75F5FF00E4D7A4 /* PostTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		28BA9C271E6FC2A800612F9E = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				28BA9C331E6FC2A900612F9E /* AppDelegate.swift */,
+				28B5899F1E75CCDD00E4D7A4 /* Global.swift */,
+				28B589A11E75F54A00E4D7A4 /* Views */,
 				28BA9C671E6FD07B00612F9E /* Controllers */,
 				28BA9C631E6FCD8700612F9E /* Model */,
 				28BA9C371E6FC2A900612F9E /* Main.storyboard */,
@@ -155,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				28BA9C651E6FCDAF00612F9E /* User.swift */,
+				28B5899D1E75C42600E4D7A4 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -165,7 +184,8 @@
 				28BA9C611E6FC55300612F9E /* LoginViewController.swift */,
 				28BA9C681E6FD09900612F9E /* HomeViewController.swift */,
 				28B589991E752CD800E4D7A4 /* CameraViewController.swift */,
-				28B5899B1E7535A900E4D7A4 /* TabBarViewController.swift */,
+				28036E1F1E761E960071BB22 /* ProfileViewController.swift */,
+				28036E211E7642EB0071BB22 /* CameraNavViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -474,12 +494,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B589A01E75CCDD00E4D7A4 /* Global.swift in Sources */,
 				28BA9C621E6FC55300612F9E /* LoginViewController.swift in Sources */,
+				28036E201E761E960071BB22 /* ProfileViewController.swift in Sources */,
 				28B5899A1E752CD800E4D7A4 /* CameraViewController.swift in Sources */,
 				28BA9C341E6FC2A900612F9E /* AppDelegate.swift in Sources */,
+				28036E221E7642EB0071BB22 /* CameraNavViewController.swift in Sources */,
 				28BA9C661E6FCDAF00612F9E /* User.swift in Sources */,
-				28B5899C1E7535A900E4D7A4 /* TabBarViewController.swift in Sources */,
+				28B5899E1E75C42600E4D7A4 /* Post.swift in Sources */,
 				28BA9C691E6FD09900612F9E /* HomeViewController.swift in Sources */,
+				28B589A31E75F5FF00E4D7A4 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
